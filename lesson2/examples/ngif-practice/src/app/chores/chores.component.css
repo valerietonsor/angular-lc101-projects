@@ -16,3 +16,13 @@ img {
     display: block;
     margin: auto;
 }
+
+.work-harder { 
+    color: blue; 
+}
+
+.iceCream { 
+    color: purple; 
+    font-size: large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ConsoleReporter } from 'jasmine';
 
 @Component({
   selector: 'candidates',
@@ -17,16 +18,25 @@ export class CandidatesComponent implements OnInit {
   ];
 
   crew = [];
+  editMissionName = true; 
+  
 
   constructor() { }
 
   ngOnInit() {
   }
 
+
+
   // Code the addToCrew function here:
 
-
+addToCrew(selected){ 
+  this.crew.push(selected);  
+}
   // BONUS: Code the changeMissionName function here:
-
+changeMissionName(newName){ 
+  this.missionName = newName; 
+  this. editMissionName = false; 
+}
 
 }
